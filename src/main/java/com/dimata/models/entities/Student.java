@@ -20,13 +20,11 @@ public class Student implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String name;
-
+    
     // Contoh seting nama tabel, panjang data dan data ini unik atau tidak
     @Column(name="student_address",length = 100,unique = true)
     private String address;
-
     // COnstructor sama SETER GETTER BAKAL ILANG kalau pake LombokAnnotation
 
     public Student() {
